@@ -1,0 +1,148 @@
+@keyframes slideInLeft {
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0);
+        }
+    }
+@keyframes slideInRight {
+        from{
+            transform: translateX(300px);
+        }
+        to{
+            transform: translateX(0);
+        }
+        
+    }
+
+*{
+    margin: 0px;
+    padding : 0px;
+    /* background-color: #4a4646; */
+    box-sizing: border-box;
+
+}
+body{
+    background-image: url('../img/bg.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    /* background: #000; */
+}
+/*--------------------- Home-------------------------- */
+
+
+/* header section */
+.logo {
+    color: #e1d7d9;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0px auto 0px 20px;
+    display: flex;
+    align-items: center;
+    font-family:Monoton;
+    letter-spacing: 1px;
+    position: relative;
+    right: 90px;
+        
+}
+
+.logo span{
+    font-size: 0.7rem;
+    margin-left: 5px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+li, a {
+    text-decoration: none;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 600;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    
+}
+
+.nav_links{
+    list-style: none;
+    
+}
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 20px;    
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+    color: #cec5c5;
+}
+.nav_links li a:hover {
+    color: #ffffff;
+}
+
+
+/**************** Header End ****************/
+
+.home{
+    /* background-color: rgb(248, 248, 248); */
+    font-family: "PT Sans", sans-serif;
+    position: relative;
+    display: flex;
+    left: -20px;
+    height: 500px;
+    width: 1000px;
+}
+.home-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: left;
+    top: 100px;
+    left: 100px;
+    height: 300px;
+    width: 600px;
+    animation-name: slideInLeft;
+    animation-duration:0.8s ;  
+}
+
+.caption-text{
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+.paragraph{
+    text-align: left;
+    font-weight: 400;
+}
+
+.btncontrainer{
+    display: flex;
+    gap: 10px;
+}
+
+.button1{
+    position: relative;
+    font-size: 1.3rem;
+    top:20px;
+    padding: 15px 15px;
+    background-color: #a2707b;
+    border-radius: 0px;
+    transition: all 0.7s ease;
+    
+}
+.button1 a{
+    color:rgb(31, 32, 33);
+    
+}
+.button1:hover{
+    background-color: #e2cfd3;
+}

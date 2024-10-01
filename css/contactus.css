@@ -1,0 +1,149 @@
+@keyframes slideInLeft {
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+    
+}
+@keyframes slideInDown {
+    from{
+        transform: translateY(300px);
+    }
+    to{
+        transform: translateY(0);
+    }
+    
+}
+@keyframes slideInUp {
+    from{
+        transform: translateY(-300px);
+    }
+    to{
+        transform: translateY(0);
+    }
+    
+}
+@keyframes slideInRight {
+    from{
+        transform: translateX(300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+    
+}
+
+*{
+    margin: 0px;
+    padding : 0px;
+    /* background-color: #4a4646; */
+    box-sizing: border-box;
+
+}
+body{
+    background-image: url('../img/bg.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    
+}
+/*--------------------- Home-------------------------- */
+
+
+/* header section */
+.logo {
+    color: #e1d7d9;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0px auto 0px 20px;
+    display: flex;
+    align-items: center;
+    font-family:Monoton;
+    letter-spacing: 1px;
+    position: relative;
+    right: 90px;
+        
+}
+
+.logo span{
+    font-size: 0.7rem;
+    margin-left: 5px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+li, a {
+    text-decoration: none;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 600;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    
+}
+
+.nav_links{
+    list-style: none;
+    
+}
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 20px;    
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+    color: #cec5c5;
+}
+.nav_links li a:hover {
+    color: #ffffff;
+}
+
+.contact-form{
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    animation-name: slideInRight;
+    animation-duration:1s ;
+}
+.txt{
+    position: relative;
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+    color: rgb(136, 79, 79);
+    border: none;
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+
+.msg{
+    position: relative;
+    width: 400px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 0.9rem;
+}
+.contact-btn{
+    position: relative;
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(205, 198, 217);
+    cursor: pointer;
+    font-weight: bold;
+}

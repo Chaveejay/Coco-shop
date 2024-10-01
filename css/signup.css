@@ -1,0 +1,129 @@
+@keyframes slideInLeft {
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+    
+}
+@keyframes slideInRight {
+    from{
+        transform: translateX(300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+    
+}
+
+*{
+    margin: 0px;
+    padding : 0px;
+    /* background-color: #4a4646; */
+    box-sizing: border-box;
+}
+.main-box{
+    position: relative;
+    display: flex;
+    margin: auto;
+    top:200px;
+    background-color : #d6cdcd;
+    width: 550px;
+    height: 450px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.login{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+    width: 275px;
+    background-color: #ffffff;
+    animation-name: slideInLeft;
+    animation-duration:1s ;
+}
+.sign-up{
+    position: relative;
+    top:20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: poppins;
+}
+.form{
+    position: relative;
+    top: 30px;
+    right: 0px;
+    width: 200px;
+    height: 30px;
+    font-size: 0.9rem;
+}
+#username, #password, #email, #confirm-password{
+    position: relative;
+    width: 200px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: #e2cccc;
+    font-size: 0.7rem;
+    text-align: center;
+    border: none;
+    margin-bottom: 5px;
+}
+.signup-btn{
+    position: relative;
+    height: 30px;
+    width: 150px;
+    bottom: 5px;
+    left: 25px;
+    border-radius: 25px;
+    background-color: #c3bd4d;
+    color: #ffffff;
+    border: 1px solid white;
+    transition: all 0.8s ease;
+    cursor: pointer;
+}
+.signup-btn:hover{
+    background-color: #a2a457;
+}
+.sign-in{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    width: 275px;
+    background-color: #c3bd4d;
+    animation-name: slideInRight;
+    animation-duration:1s ;
+}
+.welcome{
+    font-size: 1.6rem;
+    color: #ffffff;
+    font-family: poppins;
+    font-weight: bold;
+    text-align: center;
+}
+.paragraph{
+    color: #ffffff;
+    font-family: poppins;
+}
+
+.signin-btn{
+    position: relative;
+    height: 30px;
+    width: 150px;
+    top:10px;
+    left: 5px;
+    color: #ffffff;
+    border: 1px solid white;
+    border-radius: 25px;
+    background-color: #c3bd4d;
+    transition: all 0.8s ease;
+    cursor: pointer;
+}
+
+.signin-btn:hover{
+    background-color: #a2a457;
+}
